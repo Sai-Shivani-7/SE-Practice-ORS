@@ -10,6 +10,7 @@
   
 
   <name>ORS Webapp</name>
+  <packaging>war</packaging>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -20,7 +21,20 @@
   </properties>
 
   <dependencies>
-    
+    <!-- Source: https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+		<dependency>
+		    <groupId>javax.servlet</groupId>
+		    <artifactId>javax.servlet-api</artifactId>
+		    <version>4.0.1</version>
+		    <scope>provided</scope>
+		</dependency>
+		<!-- Source: https://mvnrepository.com/artifact/javax.servlet.jsp/javax.servlet.jsp-api -->
+		<dependency>
+		    <groupId>javax.servlet.jsp</groupId>
+		    <artifactId>javax.servlet.jsp-api</artifactId>
+		    <version>2.3.3</version>
+		    <scope>provided</scope>
+		</dependency>
       
   </dependencies>
 
@@ -34,7 +48,7 @@
         </plugin>
         <!-- see http://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_war_packaging -->
         <plugin>
-          <artifactId>maven-compiler-plugn</artifactId>
+          <artifactId>maven-compiler-plugin</artifactId>
           <version>3.13.0</version>
         </plugin>
         <plugin>
