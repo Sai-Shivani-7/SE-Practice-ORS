@@ -5,7 +5,7 @@
 </head>
 <body>
     <h2>Apply for a Job</h2>
-    
+    //added webhooks
     <form action="apply.jsp" method="post">
         
         <label>Full Name:</label>
